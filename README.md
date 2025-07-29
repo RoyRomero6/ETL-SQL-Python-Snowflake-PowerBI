@@ -49,4 +49,15 @@ Una vez extraídos los datos de la tabla `empleado`, se utilizaron funciones de 
 - Limpieza de registros faltantes o inválidos.
  📷 **Captura: Comprobación de nulos y limpieza de datos**
 <img width="1005" height="302" alt="Image" src="https://github.com/user-attachments/assets/4936e7b7-51de-415d-ba79-462b894c6a60" />
+ 📷 **Captura: Comprobación de unicos para contratos**
+<img width="1018" height="167" alt="Image" src="https://github.com/user-attachments/assets/1a61f550-a731-4c23-b147-115010d5d623" />
+ 📷 **Captura: Remplazo de valores para contratos**
+ 📷 **Captura: Segunda comprobación de unicos para contratos**
+ 📷 **Captura: Comprobación de unicos para estado civil**
+ 📷 **Captura: Remplazo de valores para estado civil**
+ 📷 **Captura: Comprobación de unicos para nivel educativo**
+ 📷 **Captura: Remplazo de valores para nivel educativo**
+ 📷 **Captura: Tabla emppleados a CSV**
+
+
 
