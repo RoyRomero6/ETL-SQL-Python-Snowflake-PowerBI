@@ -47,3 +47,5 @@ Una vez extraídos los datos de la tabla `empleado`, se utilizaron funciones de 
 - Conversión de tipos de datos (por ejemplo, fechas).
 - Cálculo de nuevas columnas, como la **antigüedad del empleado**.
 - Limpieza de registros faltantes o inválidos.
+📷 **Captura: Comprobación de nulos y limpieza de datos**
+
