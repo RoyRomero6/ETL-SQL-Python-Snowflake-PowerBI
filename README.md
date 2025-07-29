@@ -33,7 +33,7 @@ Se utiliza la librería [`oracledb`](https://python-oracledb.readthedocs.io/en/l
 
 📷 **Captura tabla1(Empleados): Conexión a Oracle y ejecución de una consulta simple (`SELECT * FROM empleado`) en VS Code / Jupyter Notebook:**
 
-![Conexión a Oracle y consulta]
+![Conexión a Oracle y consulta]<img width="1010" height="540" alt="Image" src="https://github.com/user-attachments/assets/dd68e5ec-b358-42dd-81e0-b61159fc8abc" />
 
 > 🔒 **Nota:** Las credenciales (usuario, contraseña y DSN) han sido ocultadas manualmente en la captura para mantener la seguridad del proyecto.
 
