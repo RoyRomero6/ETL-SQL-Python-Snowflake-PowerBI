@@ -52,8 +52,12 @@ Una vez extraídos los datos de la tabla `empleado`, se utilizaron funciones de 
  📷 **Captura: Comprobación de unicos para contratos**
 <img width="1018" height="167" alt="Image" src="https://github.com/user-attachments/assets/1a61f550-a731-4c23-b147-115010d5d623" />
  📷 **Captura: Remplazo de valores para contratos**
+<img width="993" height="257" alt="Image" src="https://github.com/user-attachments/assets/14803a6e-af69-47db-9475-9bb17bb0b22c" />
+<img width="971" height="395" alt="Image" src="https://github.com/user-attachments/assets/241c4c60-14aa-4a40-80c5-3d31fdebd343" />
  📷 **Captura: Segunda comprobación de unicos para contratos**
+<img width="1018" height="137" alt="Image" src="https://github.com/user-attachments/assets/c81b953c-547e-4a50-a2ca-a103c5ec2d4c" />
  📷 **Captura: Comprobación de unicos para estado civil**
+<img width="1016" height="138" alt="Image" src="https://github.com/user-attachments/assets/95989844-373e-4c67-a378-6d97fbe77aba" />
  📷 **Captura: Remplazo de valores para estado civil**
  📷 **Captura: Comprobación de unicos para nivel educativo**
  📷 **Captura: Remplazo de valores para nivel educativo**
