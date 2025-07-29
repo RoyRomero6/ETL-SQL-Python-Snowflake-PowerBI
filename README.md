@@ -59,9 +59,15 @@ Una vez extraídos los datos de la tabla `empleado`, se utilizaron funciones de 
  📷 **Captura: Comprobación de unicos para estado civil**
 <img width="1016" height="138" alt="Image" src="https://github.com/user-attachments/assets/95989844-373e-4c67-a378-6d97fbe77aba" />
  📷 **Captura: Remplazo de valores para estado civil**
+<img width="975" height="299" alt="Screenshot (288)" src="https://github.com/user-attachments/assets/4e76c1dd-8af2-4b0d-b468-5f08ec0604a1" />
+<img width="1020" height="386" alt="Screenshot (289)" src="https://github.com/user-attachments/assets/e0c7e74b-c767-40b0-9456-3adc5e616adf" />
  📷 **Captura: Comprobación de unicos para nivel educativo**
+<img width="1009" height="125" alt="Screenshot (290) - Copy" src="https://github.com/user-attachments/assets/c04df06a-8667-4120-8a44-d454604c5153" />
  📷 **Captura: Remplazo de valores para nivel educativo**
+<img width="1009" height="179" alt="Screenshot (290)" src="https://github.com/user-attachments/assets/99616b3e-2a12-40cf-b714-2411a944cc8f" />
  📷 **Captura: Tabla emppleados a CSV**
+<img width="1018" height="83" alt="Screenshot (292)" src="https://github.com/user-attachments/assets/77d64400-5ad9-4909-a33c-d0752e0d1efc" />
+
 
 
 
