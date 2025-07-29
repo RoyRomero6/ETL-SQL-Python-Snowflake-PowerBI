@@ -33,8 +33,17 @@ Se utiliza la librería [`oracledb`](https://python-oracledb.readthedocs.io/en/l
 
 📷 **Captura tabla1(Empleados): Conexión a Oracle y ejecución de una consulta simple (`SELECT * FROM empleado`) en VS Code / Jupyter Notebook:**
 
-![Conexión a Oracle y consulta]<img width="1010" height="540" alt="Image" src="https://github.com/user-attachments/assets/dd68e5ec-b358-42dd-81e0-b61159fc8abc" />
+![Conexión a Oracle y consulta]<img width="1014" height="536" alt="Image" src="https://github.com/user-attachments/assets/722b9e09-f9e8-4e1d-afa3-eee80faf70e6" />
+<img width="1012" height="540" alt="Image" src="https://github.com/user-attachments/assets/f83dfec2-7ff2-40bf-a781-16238f4831e0" />
 
 > 🔒 **Nota:** Las credenciales (usuario, contraseña y DSN) han sido ocultadas manualmente en la captura para mantener la seguridad del proyecto.
 
 ---
+## 🧪 Transformaciones con `pandas`: Tabla `empleado`
+
+Una vez extraídos los datos de la tabla `empleado`, se utilizaron funciones de `pandas` para convertir los datos en un `DataFrame` y aplicar transformaciones como:
+
+- Renombrar columnas para mayor claridad.
+- Conversión de tipos de datos (por ejemplo, fechas).
+- Cálculo de nuevas columnas, como la **antigüedad del empleado**.
+- Limpieza de registros faltantes o inválidos.
