@@ -18,12 +18,12 @@ Se utiliza la librería `oracledb` en Python para conectarse a la base de datos 
 #### 🧩 Tablas en Oracle SQL
 
 - **`departamento`**  
-  Contiene información sobre los distintos departamentos de la empresa.  
+Contiene información sobre los distintos departamentos de la empresa.  
  <img width="627" height="477" alt="Image" src="https://github.com/user-attachments/assets/8b38898e-a02b-4de8-b14c-485a84d7c84c" />
 - **`empleado`**  
-  Contiene los datos del personal de la organización.  
+Contiene los datos del personal de la organización.  
 <img width="1088" height="705" alt="Image" src="https://github.com/user-attachments/assets/f6d381d4-6d49-4e3e-9c9e-8deb84a8eb7a" />
 - **`costos`**  
-  Tabla que almacena los componentes de costo por empleado y por mes.  
+Tabla que almacena los componentes de costo por empleado y por mes.  
 <img width="638" height="699" alt="Image" src="https://github.com/user-attachments/assets/186a220a-5fe9-4c58-86f1-c3f9c64cdb5b" />  
 ---
