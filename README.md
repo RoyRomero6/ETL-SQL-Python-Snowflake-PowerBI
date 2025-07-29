@@ -48,4 +48,5 @@ Una vez extraídos los datos de la tabla `empleado`, se utilizaron funciones de 
 - Cálculo de nuevas columnas, como la **antigüedad del empleado**.
 - Limpieza de registros faltantes o inválidos.
 📷 **Captura: Comprobación de nulos y limpieza de datos**
+<img width="1005" height="302" alt="Image" src="https://github.com/user-attachments/assets/4936e7b7-51de-415d-ba79-462b894c6a60" />
 
