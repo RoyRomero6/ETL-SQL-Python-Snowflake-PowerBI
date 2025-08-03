@@ -193,8 +193,9 @@ Se establece conexión desde consola usando:
 ```bash
 snowsql -a <account_name> -u <usuario>
 📷 **Captura: Autenticación y conexión en SnowSQL**
-<img width="981" height="508" alt="Screenshot (250)" src="https://github.com/user-attachments/assets/4587c659-d78b-4f89-a561-0792fba1fbeb" />
-<img width="980" height="507" alt="Screenshot (251)" src="https://github.com/user-attachments/assets/c4a2ec98-a925-4767-924b-31f69c5d174f" />
+<img width="981" height="508" alt="Image" src="https://github.com/user-attachments/assets/970aa325-97f0-4937-a554-126507338bd8" />
+
+<img width="980" height="507" alt="Image" src="https://github.com/user-attachments/assets/3aa57039-9fed-44f9-9bb4-5c8cd6fb52b4" />
 
 # 📤 Carga de archivos CSV comprimidos a Snowflake
 
