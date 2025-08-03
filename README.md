@@ -124,6 +124,24 @@ Una vez finalizadas las transformaciones, se exporta el DataFrame a un archivo `
 
 ---
 
+## 🏢 Conexión a la tabla `departamento`
+
+Se realiza la conexión a la base de datos Oracle utilizando la librería `oracledb` en Python para consultar la tabla `departamento`.
+
+📷 **Captura: Conexión a Oracle y consulta de la tabla `departamento`**
+<img width="1014" height="627" alt="Screenshot (300)" src="https://github.com/user-attachments/assets/4278dc30-a515-4a25-90bb-42e38d292c1c" />
+<img width="1030" height="601" alt="Screenshot (301)" src="https://github.com/user-attachments/assets/af91e6ff-9832-4517-90fa-dc73195eee2b" />
+
+---
+
+## 🔄 Transformación y exportación a CSV
+
+Una vez extraídos los datos, se transforma el DataFrame con `pandas` para preparar el archivo `OraDepartamento.csv`.
+
+
+📷 **Captura: Exportación a `OraDepartamento.csv`**
+<img width="1018" height="109" alt="Screenshot (302)" src="https://github.com/user-attachments/assets/9c5536d1-0afd-48cc-9c32-a9e0b678bff6" />
+
 
 
 
