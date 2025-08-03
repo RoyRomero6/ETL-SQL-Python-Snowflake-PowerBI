@@ -141,6 +141,114 @@ Una vez extraídos los datos, se transforma el DataFrame con `pandas` para prepa
 
 📷 **Captura: Exportación a `OraDepartamento.csv`**
 <img width="1018" height="109" alt="Screenshot (302)" src="https://github.com/user-attachments/assets/9c5536d1-0afd-48cc-9c32-a9e0b678bff6" />
+## ❄️ Carga y Consulta de Datos en Snowflake
+
+Una vez transformadas las tablas en Python y exportadas a `.csv`, se cargaron en Snowflake para su almacenamiento estructurado y consulta analítica. El proceso incluye la creación de base de datos, esquema, tablas, formato de archivo, y la carga desde un `STAGE`.
+
+---
+
+### 🧭 Configuración inicial
+
+📷 **Captura: Ejecución de comandos de configuración**
+> `USE WAREHOUSE SYSTEM$STREAMLIT_NOTEBOOK_WH;` 
+> `CREATE OR REPLACE DATABASE Enterprise;`  
+> `CREATE OR REPLACE SCHEMA RRHH;`  
+> `USE DATABASE Enterprise;`  
+> `USE SCHEMA RRHH;`
+<img width="988" height="678" alt="Screenshot (237)" src="https://github.com/user-attachments/assets/5818b084-271c-4ebb-ba44-bfff6f6b1039" />
+
+📷 **Captura: Verificación de entorno activo**
+> `SELECT CURRENT_ROLE(), CURRENT_WAREHOUSE(), CURRENT_DATABASE(), CURRENT_SCHEMA();`
+<img width="979" height="573" alt="Screenshot (239)" src="https://github.com/user-attachments/assets/17171ab1-5205-4f4e-91ac-c25c20a7fd25" />
+
+---
+
+### 🧱 Creación de tablas en Snowflake
+
+📷 **Captura: Creación de la tabla `DIM_DEPARTAMENTO`**  
+<img width="978" height="554" alt="Screenshot (241)" src="https://github.com/user-attachments/assets/6a4bc172-50a1-4614-b2a1-b7d0f2cf3f52" />
+
+📷 **Captura: Creación de la tabla `DIM_EMPLEADO`**  
+<img width="954" height="311" alt="Screenshot (242)" src="https://github.com/user-attachments/assets/b893dd3a-9b29-4d6b-90f2-c83e1a36618a" />
+
+📷 **Captura: Creación de la tabla `HECHOS_EMPLEADOS`**
+<img width="955" height="279" alt="Screenshot (244)" src="https://github.com/user-attachments/assets/1e904ed9-9a64-4526-9686-bdacfa926576" />
+
+---
+
+### 🗂️ Configuración del formato de archivo y stage
+
+📷 **Captura: Creación del formato de archivo `MI_CSV`**  
+<img width="979" height="377" alt="Screenshot (246)" src="https://github.com/user-attachments/assets/b4feaee2-558a-4cab-a415-9f32b0817184" />
+
+📷 **Captura: Creación del `STAGE` llamado `RRHH_STAGE`**
+<img width="976" height="286" alt="Screenshot (247)" src="https://github.com/user-attachments/assets/fd05ccc5-255e-468a-a528-c894fabfad37" />
+
+---
+
+### 💻 Conexión a Snowflake desde SnowSQL
+
+Se establece conexión desde consola usando:
+
+```bash
+snowsql -a <account_name> -u <usuario>
+📷 **Captura: Autenticación y conexión en SnowSQL**
+<img width="981" height="508" alt="Screenshot (250)" src="https://github.com/user-attachments/assets/4587c659-d78b-4f89-a561-0792fba1fbeb" />
+<img width="980" height="507" alt="Screenshot (251)" src="https://github.com/user-attachments/assets/c4a2ec98-a925-4767-924b-31f69c5d174f" />
+
+# 📤 Carga de archivos CSV comprimidos a Snowflake
+
+En este paso se cargan los tres archivos `.csv.gz` al stage `@RRHH_STAGE` de Snowflake usando SnowSQL. Esta acción es necesaria para luego ejecutar los comandos `COPY INTO` que insertan los datos en sus respectivas tablas.
+
+---
+
+## 🔹 1. Departamento – `OraDepartamento.csv.gz`
+
+Este archivo contiene los datos de la tabla de departamentos transformada y comprimida.
+
+### 📸 Captura de SnowSQL
+<img width="1366" height="136" alt="Screenshot (252)" src="https://github.com/user-attachments/assets/92f68729-8e36-44c0-8d49-e4d99efdcc63" />
+
+## 🔹 2. Empleados – `OraEmpleados.csv.gz`
+
+Este archivo contiene los datos de la tabla de empleados transformada y comprimida.
+
+### 📸 Captura de SnowSQL
+<img width="1347" height="102" alt="Screenshot (253)" src="https://github.com/user-attachments/assets/8d4c8321-0c5c-473d-934f-789e4017bf51" />
+
+## 🔹 3. Hechos – `OraHechos.csv.gz`
+
+Este archivo contiene los datos de la tabla de hechos transformada y comprimida.
+
+### 📸 Captura de SnowSQL
+<img width="1366" height="101" alt="Screenshot (254)" src="https://github.com/user-attachments/assets/b3ffe4c1-9c46-4161-be5d-be91720b1dbc" />
+
+
+### 📤 Carga de datos a Snowflake
+
+1. **Carga de `DIM_DEPARTAMENTO`**
+   - `COPY INTO RRHH.DIM_DEPARTAMENTO FROM @RRHH_STAGE/OraDepartamento.csv.gz FILE_FORMAT = (FORMAT_NAME = MI_CSV);`
+   - 📷 **Captura: Comprobación con `SELECT * FROM DIM_DEPARTAMENTO;`**
+<img width="973" height="108" alt="Screenshot (303)" src="https://github.com/user-attachments/assets/b64fbabf-9a00-4e5f-b6fc-a012284c4a6c" />
+<img width="993" height="560" alt="Screenshot (258)" src="https://github.com/user-attachments/assets/e9f677e1-e5ae-4a2c-9c7e-b900401d373c" />
+
+
+2. **Carga de `DIM_EMPLEADO`**
+   - `COPY INTO RRHH.DIM_EMPLEADO FROM @RRHH_STAGE/OraEmpleados.csv.gz FILE_FORMAT = (FORMAT_NAME = MI_CSV);`
+   - 📷 **Captura: Comprobación con `SELECT * FROM DIM_EMPLEADO;`**
+<img width="974" height="112" alt="Screenshot (305)" src="https://github.com/user-attachments/assets/289763f6-2ff5-4c6f-b38f-cdf731b33963" />
+<img width="950" height="545" alt="Screenshot (260)" src="https://github.com/user-attachments/assets/3375909d-d461-45bf-b1a9-2a272c66db1d" />
+
+
+3. **Carga de `HECHOS_EMPLEADOS`**
+   - `COPY INTO RRHH.HECHOS_EMPLEADOS FROM @RRHH_STAGE/OraHechos.csv.gz FILE_FORMAT = (FORMAT_NAME = MI_CSV);`
+   - 📷 **Captura: Comprobación con `SELECT * FROM HECHOS_EMPLEADOS;`**
+<img width="964" height="291" alt="Screenshot (306)" src="https://github.com/user-attachments/assets/0cee8790-2645-427a-8471-69478065728d" />
+<img width="975" height="562" alt="Screenshot (261)" src="https://github.com/user-attachments/assets/817ebf06-9040-4586-b333-d4dc3169dd00" />
+
+---
+
+
 
 
 
