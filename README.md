@@ -67,6 +67,63 @@ Una vez extraídos los datos de la tabla `empleado`, se utilizaron funciones de 
 <img width="1009" height="179" alt="Screenshot (290)" src="https://github.com/user-attachments/assets/99616b3e-2a12-40cf-b714-2411a944cc8f" />
  📷 **Captura: Tabla emppleados a CSV**
 <img width="1018" height="83" alt="Screenshot (292)" src="https://github.com/user-attachments/assets/77d64400-5ad9-4909-a33c-d0752e0d1efc" />
+## 🧾 Transformación de la Tabla de HECHOS_EMPLEADOS:
+
+Luego de transformar la tabla `empleado`, se procede a trabajar con la tabla `HECHOS_EMPLEADOS`, que contiene los componentes de costo asociados a cada empleado por mes.
+
+### 🔗 Conexión y consulta de la tabla `HECHOS_EMPLEADOS`
+
+Se realiza una conexión similar a la usada anteriormente, ahora consultando la tabla `HECHOS_EMPLEADOS`:
+
+📷 **Captura: Conexión a Oracle y consulta de la tabla `HECHOS_EMPLEADOS`**
+
+<img width="1015" height="613" alt="Screenshot (294)" src="https://github.com/user-attachments/assets/c3cdbbfb-9cef-4eef-92c9-b14a9bec9b11" />
+
+---
+
+### ❌ Eliminación de columnas innecesarias
+
+Se eliminan columnas que no aportan al análisis o que están vacías o duplicadas.
+
+📷 **Captura: Eliminación de columna irrelevante**
+<img width="1019" height="625" alt="Screenshot (295)" src="https://github.com/user-attachments/assets/477fd3c6-e6e5-4d87-be9e-0e27ddc31729" />
+---
+
+### 🔍 Verificación de valores nulos
+
+Se revisan los datos faltantes en cada columna:
+
+📷 **Captura: Comprobación de valores nulos**
+<img width="1011" height="377" alt="Screenshot (296)" src="https://github.com/user-attachments/assets/f6de2c8d-6097-439e-9289-88a277ea37af" />
+---
+
+### 🔢 Verificación de tipos de datos
+
+Se comprueba que cada columna tenga el tipo de dato correcto, especialmente fechas y montos.
+
+📷 **Captura: Tipos de datos antes y después de conversión**
+<img width="1019" height="354" alt="Screenshot (297)" src="https://github.com/user-attachments/assets/f9965f97-0d0a-4706-8cc8-d67e53afeeef" />
+
+---
+
+### 🧬 Verificación de duplicados (ID empleado)
+
+Se verifica que no existan registros duplicados por ID de empleado.
+
+📷 **Captura: Detección de duplicados por ID**
+<img width="1011" height="332" alt="Screenshot (298)" src="https://github.com/user-attachments/assets/8c42cb55-d66a-4536-a226-1ac482e4eda9" />
+
+---
+
+### 📤 Exportación como `OraHechos.csv`
+
+Una vez finalizadas las transformaciones, se exporta el DataFrame a un archivo `.csv` con el nombre `OraHechos.csv`.
+
+📷 **Captura: Exportación del archivo `OraHechos.csv`**
+<img width="1018" height="212" alt="Screenshot (299)" src="https://github.com/user-attachments/assets/004564f6-8fb1-4e96-8eea-25d10595c9cc" />
+
+---
+
 
 
 
