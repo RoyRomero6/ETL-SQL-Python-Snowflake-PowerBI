@@ -223,26 +223,22 @@ Este archivo contiene los datos de la tabla de hechos transformada y comprimida.
 ### 📸 Captura de SnowSQL
 <img width="1366" height="101" alt="Screenshot (254)" src="https://github.com/user-attachments/assets/b3ffe4c1-9c46-4161-be5d-be91720b1dbc" />
 
-
 ### 📤 Carga de datos a Snowflake
 
 1. **Carga de `DIM_DEPARTAMENTO`**
-   - `COPY INTO RRHH.DIM_DEPARTAMENTO FROM @RRHH_STAGE/OraDepartamento.csv.gz FILE_FORMAT = (FORMAT_NAME = MI_CSV);`
-   - 📷 **Captura: Comprobación con `SELECT * FROM DIM_DEPARTAMENTO;`**
+📷 **Captura: Comprobación con `SELECT * FROM DIM_DEPARTAMENTO;`**
 <img width="973" height="108" alt="Screenshot (303)" src="https://github.com/user-attachments/assets/b64fbabf-9a00-4e5f-b6fc-a012284c4a6c" />
 <img width="993" height="560" alt="Screenshot (258)" src="https://github.com/user-attachments/assets/e9f677e1-e5ae-4a2c-9c7e-b900401d373c" />
 
 
 2. **Carga de `DIM_EMPLEADO`**
-   - `COPY INTO RRHH.DIM_EMPLEADO FROM @RRHH_STAGE/OraEmpleados.csv.gz FILE_FORMAT = (FORMAT_NAME = MI_CSV);`
-   - 📷 **Captura: Comprobación con `SELECT * FROM DIM_EMPLEADO;`**
+📷 **Captura: Comprobación con `SELECT * FROM DIM_EMPLEADO;`**
 <img width="974" height="112" alt="Screenshot (305)" src="https://github.com/user-attachments/assets/289763f6-2ff5-4c6f-b38f-cdf731b33963" />
 <img width="950" height="545" alt="Screenshot (260)" src="https://github.com/user-attachments/assets/3375909d-d461-45bf-b1a9-2a272c66db1d" />
 
 
-3. **Carga de `HECHOS_EMPLEADOS`**
-   - `COPY INTO RRHH.HECHOS_EMPLEADOS FROM @RRHH_STAGE/OraHechos.csv.gz FILE_FORMAT = (FORMAT_NAME = MI_CSV);`
-   - 📷 **Captura: Comprobación con `SELECT * FROM HECHOS_EMPLEADOS;`**
+3. **Carga de `HECHOS_EMPLEADOS`**  
+📷 **Captura: Comprobación con `SELECT * FROM HECHOS_EMPLEADOS;`**
 <img width="964" height="291" alt="Screenshot (306)" src="https://github.com/user-attachments/assets/0cee8790-2645-427a-8471-69478065728d" />
 <img width="975" height="562" alt="Screenshot (261)" src="https://github.com/user-attachments/assets/817ebf06-9040-4586-b333-d4dc3169dd00" />
 
